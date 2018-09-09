@@ -2,3 +2,5 @@
 src
 .settings
 .classpath
+.project
+target
