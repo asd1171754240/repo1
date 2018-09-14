@@ -311,9 +311,9 @@
       <path value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/plugins/select2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="767" />
-    <option name="y" value="246" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="459" />
+    <option name="y" value="103" />
     <option name="width" value="1074" />
     <option name="height" value="691" />
   </component>
@@ -379,7 +379,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536888458562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536889599566" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -389,6 +389,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\daima\FOX\pinyougou-parent\pinyougou-sellergoods-service\src\main\java\com\pinyougou\sellergoods\service\impl" />
+      <recent name="D:\daima\FOX\pinyougou-parent\pinyougou-sellergoods-interface\src\main\java\com\pinyougou\sellergoods\service" />
       <recent name="D:\daima\FOX\pinyougou-parent\pinyougou-manager-web\src\main\webapp" />
     </key>
   </component>
