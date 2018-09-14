@@ -98,10 +98,10 @@ public class GoodsDescController {
 			return new Result(false, "删除失败");
 		}
 	}
-	
-		/**
+
+	/**
 	 * 查询+分页
-	 * @param brand
+	 * @param goodsDesc
 	 * @param page
 	 * @param rows
 	 * @return
