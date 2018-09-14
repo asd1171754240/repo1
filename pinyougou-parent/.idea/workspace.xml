@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31556ef6-3f62-4de3-be0d-e165cd29b2d8" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base_pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinyougou-manager-web/target/tomcat/logs/access_log.2018-09-13" beforeDir="false" afterPath="$PROJECT_DIR$/pinyougou-manager-web/target/tomcat/logs/access_log.2018-09-13" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/pinyougou-sellergoods-interface/target/" />
     <ignored path="$PROJECT_DIR$/pinyougou-manager-web/target/" />
@@ -74,7 +75,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="4" />
           <entry key="java" value="17" />
-          <entry key="js" value="4" />
+          <entry key="js" value="7" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
@@ -83,20 +84,20 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="4" />
           <entry key="JAVA" value="17" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JavaScript" value="7" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3919" />
+          <entry key="html" value="4012" />
           <entry key="java" value="2592" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3919" />
+          <entry key="HTML" value="4012" />
           <entry key="JAVA" value="2592" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
@@ -106,22 +107,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/login.html">
+        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="123">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html">
+        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/controller/brandController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+            <state relative-caret-position="176">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="39" selection-start-column="39" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base_pagination.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -201,13 +223,13 @@
       <find>entity</find>
       <find>数据列表</find>
       <find>品牌名称</find>
-      <find>新建</find>
       <find>add</find>
       <find>input</find>
       <find>dele</find>
       <find>findPage</find>
       <find>findOne</find>
       <find>selectids</find>
+      <find>新建</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -226,7 +248,10 @@
         <option value="$PROJECT_DIR$/pinyougou-sellergoods-interface/src/main/java/com/pinyougou/sellergoods/service/BrandService.java" />
         <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/java/com/pinyougou/manager/controller/BrandController.java" />
         <option value="$PROJECT_DIR$/pinyougou-sellergoods-service/src/main/java/com/pinyougou/sellergoods/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base.js" />
+        <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base_pagination.js" />
         <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html" />
+        <option value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/controller/brandController.js" />
       </list>
     </option>
   </component>
@@ -276,9 +301,9 @@
       <path value="$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/plugins/select2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="462" />
-    <option name="y" value="53" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="674" />
+    <option name="y" value="291" />
     <option name="width" value="1074" />
     <option name="height" value="691" />
   </component>
@@ -335,6 +360,25 @@
             <path>
               <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinyougou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="pinyougou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinyougou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinyougou-parent" type="462c0819:PsiDirectoryNode" />
               <item name="pinyougou-sellergoods-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,7 +421,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536830982869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536884874281" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -418,7 +462,7 @@
       <workItem from="1536800204934" duration="1383000" />
       <workItem from="1536802085453" duration="686000" />
       <workItem from="1536802903316" duration="17311000" />
-      <workItem from="1536881355030" duration="1608000" />
+      <workItem from="1536881355030" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="啦啦啦">
       <created>1536720541136</created>
@@ -438,10 +482,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42221000" />
+    <option name="totallyTimeSpent" value="43579000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
+    <frame x="674" y="291" width="1074" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
@@ -450,7 +494,7 @@
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1119403" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.30374753" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -458,8 +502,8 @@
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.19136961" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32833022" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32457787" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -471,7 +515,7 @@
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="调色板" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.71695095" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.40532544" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
@@ -651,12 +695,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/base_pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/admin/brand.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+        <state relative-caret-position="123">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinyougou-manager-web/src/main/webapp/js/controller/brandController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

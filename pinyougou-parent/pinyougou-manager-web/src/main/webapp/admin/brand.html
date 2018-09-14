@@ -21,40 +21,6 @@
     <!-- 分页组件结束 -->
 
     <script type="text/javascript">
-        var app = angular.module('pinyougou', ['pagination']);//定义模块
-
-        /*品牌服务*/
-        app.service('brandService', function ($http) {
-            //读取列表数据绑定到表单中
-            this.findAll1 = function () {
-                return $http.get('../brand/findAll.do');
-            }
-            //其它方法省略.......
-
-            this.findPage1 = function (page, size) {
-                return $http.get('../brand/findPage.do?page=' + page + '&size=' + size);
-            }
-
-            this.findOne1 = function (id) {
-                return $http.get('../brand/findOne.do?id=' + id);
-            }
-
-            this.add1 = function (entity) {
-                return $http.post('../brand/add.do', entity);
-            }
-
-            this.update1 = function (entity) {
-                return $http.post('../brand/update.do', entity);
-            }
-
-            this.dele1 = function (ids) {
-                return $http.get('../brand/delete.do?ids=' + ids)
-            }
-
-            this.search1 = function (page, rows, searchEntity) {
-                return $http.post('../brand/search.do?page=' + page + "&rows=" + rows, searchEntity)
-            }
-        });
 
 
         app.controller('brandController', function ($scope, $http, brandService) {
@@ -113,8 +79,9 @@
                 );
             };
 
+
             $scope.findOne = function (id) {
-                brandService.findOne1().success(
+                brandService.findOne1(id).success(
                     function (response) {
                         $scope.entity = response;
                     });
@@ -181,7 +148,7 @@
             <div class="form-group form-inline">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default" title="新建" data-toggle="modal"
-                            data-target="#editModal"><i class="fa fa-file-o" ng-click="entity={}"></i> 新建
+                            data-target="#editModal" ng-click="entity={}"><i class="fa fa-file-o" ></i> 新新
                     </button>
                     <button type="button" class="btn btn-default" title="删除" ng-click="dele()"><i
                             class="fa fa-trash-o"></i> 删除
