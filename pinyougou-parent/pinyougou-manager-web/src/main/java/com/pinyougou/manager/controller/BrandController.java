@@ -1,6 +1,7 @@
 package com.pinyougou.manager.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import entity.PageResult;
 import entity.Result;
@@ -59,7 +60,7 @@ public class BrandController {
     }
 
     @RequestMapping("/delete")
-    public Result delete(Long[] ids){
+    public Result delete(Long[] ids) {
         try {
             brandService.delete(ids);
             return new Result(true, "删除成功");
@@ -71,13 +72,19 @@ public class BrandController {
 
     /**
      * 查询分页
+     *
      * @param brand
      * @param page
      * @param rows
      * @return
      */
     @RequestMapping("/search")
-    public PageResult search(@RequestBody TbBrand brand,int page,int rows){
-        return brandService.findPage(brand,page,rows);
+    public PageResult search(@RequestBody TbBrand brand, int page, int rows) {
+        return brandService.findPage(brand, page, rows);
+    }
+
+    @RequestMapping("/selectOptionList")
+    public List<Map> selectOptionList() {
+        return brandService.selectOptionList();
     }
 }
