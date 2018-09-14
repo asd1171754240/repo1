@@ -59,6 +59,7 @@ com\pinyougou\pojo\TbAddressExample.class
 com\pinyougou\pojo\TbSeller.class
 com\pinyougou\pojo\TbFreightTemplateExample$GeneratedCriteria.class
 com\pinyougou\pojo\TbGoodsDescExample$Criteria.class
+com\pinyougou\pojogroup\Specification.class
 com\pinyougou\pojo\TbGoods.class
 com\pinyougou\pojo\TbBrandExample$Criterion.class
 com\pinyougou\pojo\TbContentCategory.class
