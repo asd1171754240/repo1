@@ -90,10 +90,10 @@ app.controller('specificationController', function ($scope, $controller, specifi
         $scope.entity.specificationOptionList.push({});
     }
 
-    //批量选项删除
-    $scope.deleteTableRow=function(index){
+    $scope.deleTableRow=function(index){
         $scope.entity.specificationOptionList.splice(index,1);//删除
     }
+
 
 
 
