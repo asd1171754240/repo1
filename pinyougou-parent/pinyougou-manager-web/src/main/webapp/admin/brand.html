@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="../plugins/angularjs/pagination.css">
     <!-- 分页组件结束 -->
 
-    <script type="text/javascript">
-
-    </script>
-
+    <script type="text/javascript" src="../js/base_pagination.js"></script>
+    <script type="text/javascript" src="../js/serice/bramdService.js"></script>
+    <script type="text/javascript" src="../js/controller/brandController.js"></script>
+    <script type="text/javascript" src="../js/controller/baseController.js"></script>
 
 </head>
 <body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" ng-controller="brandController">
@@ -42,7 +42,7 @@
             <div class="form-group form-inline">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default" title="新建" data-toggle="modal"
-                            data-target="#editModal" ng-click="entity={}"><i class="fa fa-file-o" ></i> 新新
+                            data-target="#editModal" ng-click="entity={}"><i class="fa fa-file-o"></i> 新建
                     </button>
                     <button type="button" class="btn btn-default" title="删除" ng-click="dele()"><i
                             class="fa fa-trash-o"></i> 删除

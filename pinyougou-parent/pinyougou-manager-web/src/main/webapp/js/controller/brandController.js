@@ -1,39 +1,7 @@
-/*品牌服务*/
-app.service('brandService', function ($http) {
-    //读取列表数据绑定到表单中
-    this.findAll1 = function () {
-        return $http.get('../brand/findAll.do');
-    }
-    //其它方法省略.......
+app.controller('brandController', function ($scope, $controller, brandService) {
 
-    this.findPage1 = function (page, size) {
-        return $http.get('../brand/findPage.do?page=' + page + '&size=' + size);
-    }
+    $controller('baseController',{$scope:$scope});//继承
 
-    this.findOne1 = function (id) {
-        return $http.get('../brand/findOne.do?id=' + id);
-    }
-
-    this.add1 = function (entity) {
-        return $http.post('../brand/add.do', entity);
-    }
-
-    this.update1 = function (entity) {
-        return $http.post('../brand/update.do', entity);
-    }
-
-    this.dele1 = function (ids) {
-        return $http.get('../brand/delete.do?ids=' + ids)
-    }
-
-    this.search1 = function (page, rows, searchEntity) {
-        return $http.post('../brand/search.do?page=' + page + "&rows=" + rows, searchEntity)
-    }
-});
-
-
-
-app.controller('brandController', function ($scope, $http, brandService) {
     //读取列表数据绑定到表单中
     $scope.findAll = function () {
         brandService.findAll1().success(
@@ -43,24 +11,7 @@ app.controller('brandController', function ($scope, $http, brandService) {
         );
     };
 
-    // 分页控件配置currentPage:当前页
-    // totalItems:总记录数
-    // itemsPerPage:每页记录数
-    // perPageOptions:分页选项
-    // onChange :当页码变更后自动触发的方法
-    $scope.paginationConf = {
-        currentPage: 1,
-        totalItems: 10,
-        itemsPerPage: 10,
-        perPageOptions: [10, 20, 30, 40, 50],
-        onChange: function () {
-            $scope.reloadList();
-        }
-    };
 
-    $scope.reloadList = function () {
-        $scope.search($scope.paginationConf.currentPage, $scope.paginationConf.itemsPerPage)
-    }
     //分页
     $scope.findPage = function (page, size) {
         brandService.findPage1().success(
@@ -97,19 +48,6 @@ app.controller('brandController', function ($scope, $http, brandService) {
             });
     };
 
-    $scope.selectIds = [];
-
-    $scope.updateSelection = function ($event, id) {
-        if ($event.target.checked) {
-
-            $scope.selectIds.push(id);//push向集合添加元素
-
-        } else {
-            var index = $scope.selectIds.indexOf(id)
-            $scope.selectIds.splice(index, 1);
-        }
-    }
-
 
     $scope.dele = function () {
         //获取选中的复选框
@@ -125,6 +63,7 @@ app.controller('brandController', function ($scope, $http, brandService) {
     /*定义搜素对象*/
     $scope.searchEntity = {};
 
+    /*搜索*/
     $scope.search = function (page, rows) {
         brandService.search1(page, rows, $scope.searchEntity).success(function (response) {
                 $scope.paginationConf.totalItems = response.total;
