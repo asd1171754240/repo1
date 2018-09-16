@@ -1,4 +1,4 @@
-app.controller('baseController',function ($scope) {
+app.controller('baseController', function ($scope) {
     /**
      * 重新加载数据列表数据
      */
@@ -35,19 +35,33 @@ app.controller('baseController',function ($scope) {
         }
     }
 
-    $scope.jsonToString=function(jsonString,key){
+    $scope.jsonToString = function (jsonString, key) {
 
-        var json= JSON.parse(jsonString);
-        var value="";
+        var json = JSON.parse(jsonString);
+        var value = "";
 
-        for(var i=0;i<json.length;i++){
-            if(i>0){
-                value+=",";
+        for (var i = 0; i < json.length; i++) {
+            if (i > 0) {
+                value += ",";
             }
-            value +=json[i][key];
+            value += json[i][key];
         }
 
         return value;
     }
 
-});
+        $scope.jsonToString = function (jsonString, key) {
+            var json = JSON.parse(jsonString);//josn字符串怎么提取，没办法提取，所以转换为josn字符，然后做下一步操作
+            var value = "";/*这个value存储解析后，返回的东西 */
+            for (var i = 0; i < json.length; i++) {
+                if (i > 0) {
+                    value += ","
+                }
+                value += json[i][key];
+            }
+            return value;
+
+        }
+
+    }
+);
