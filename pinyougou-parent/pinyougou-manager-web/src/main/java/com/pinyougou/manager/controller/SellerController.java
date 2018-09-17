@@ -10,6 +10,8 @@ import com.pinyougou.sellergoods.service.SellerService;
 
 import entity.PageResult;
 import entity.Result;
+import sun.misc.Request;
+
 /**
  * controller
  * @author Administrator
@@ -21,26 +23,26 @@ public class SellerController {
 
 	@Reference
 	private SellerService sellerService;
-	
+
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
 	@RequestMapping("/findAll")
-	public List<TbSeller> findAll(){			
+	public List<TbSeller> findAll(){
 		return sellerService.findAll();
 	}
-	
-	
+
+
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
 	@RequestMapping("/findPage")
-	public PageResult  findPage(int page,int rows){			
+	public PageResult  findPage(int page,int rows){
 		return sellerService.findPage(page, rows);
 	}
-	
+
 	/**
 	 * 增加
 	 * @param seller
@@ -56,7 +58,7 @@ public class SellerController {
 			return new Result(false, "增加失败");
 		}
 	}
-	
+
 	/**
 	 * 修改
 	 * @param seller
@@ -71,8 +73,8 @@ public class SellerController {
 			e.printStackTrace();
 			return new Result(false, "修改失败");
 		}
-	}	
-	
+	}
+
 	/**
 	 * 获取实体
 	 * @param id
@@ -80,9 +82,9 @@ public class SellerController {
 	 */
 	@RequestMapping("/findOne")
 	public TbSeller findOne(String id){
-		return sellerService.findOne(id);		
+		return sellerService.findOne(id);
 	}
-	
+
 	/**
 	 * 批量删除
 	 * @param ids
@@ -92,7 +94,7 @@ public class SellerController {
 	public Result delete(String [] ids){
 		try {
 			sellerService.delete(ids);
-			return new Result(true, "删除成功"); 
+			return new Result(true, "删除成功");
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Result(false, "删除失败");
@@ -108,7 +110,24 @@ public class SellerController {
 	 */
 	@RequestMapping("/search")
 	public PageResult search(@RequestBody TbSeller seller, int page, int rows  ){
-		return sellerService.findPage(seller, page, rows);		
+		return sellerService.findPage(seller, page, rows);
 	}
-	
+
+    /**
+     * 更改状态
+     * @param sellerId 商家ID
+     * @param status 状态
+     */
+    @RequestMapping("/updateStatus")
+    public Result updateStatus(String sellerId, String status){
+        try {
+            sellerService.updateStatus(sellerId, status);
+            return new Result(true, "成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false, "失败");
+        }
+    }
+
+
 }
