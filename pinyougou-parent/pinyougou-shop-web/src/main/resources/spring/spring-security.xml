@@ -20,25 +20,31 @@
         <!-- 当前用户必须有ROLE_USER的角色 才可以访问根目录及所属子目录的资源 -->
         <intercept-url pattern="/**" access="ROLE_SELLER"/>
         <!-- 开启表单登陆功能 -->
-        <form-login login-page="/login.html" default-target-url="/admin/index.html"
-                    authentication-failure-url="/shoplogin.html" always-use-default-target="true"/>
+        <form-login  login-page="/shoplogin.html" default-target-url="/admin/index.html" authentication-failure-url="/shoplogin.html" always-use-default-target="true"/>
         <csrf disabled="true"/>
         <headers>
             <frame-options policy="SAMEORIGIN"/>
         </headers>
         <logout/>
     </http>
+
     <!-- 认证管理器 -->
     <authentication-manager>
-        <authentication-provider>
-            <user-service>
-                <user name="admin" password="123456" authorities="ROLE_ADMIN"/>
-                <user name="saohuo" password="hubaorui" authorities="ROLE_ADMIN"/>
-            </user-service>
+        <authentication-provider user-service-ref="userDetailService">
+            <password-encoder ref="bcryptEncoder"></password-encoder>
         </authentication-provider>
     </authentication-manager>
 
-    <!--认证类-->
-    <beans:bean id="userDetailService" class="com.pinyougou.service.UserDetailsServiceImpl"
+    <!-- 认证类 -->
+    <beans:bean id="userDetailService" class="com.pinyougou.service.UserDetailsServiceImpl">
+        <beans:property name="sellerService" ref="sellerService"></beans:property>
+    </beans:bean>
 
+    <!-- 引用dubbo 服务 -->
+    <dubbo:application name="pinyougou-shop-web" />
+    <dubbo:registry address="zookeeper://192.168.25.135:2181"/>
+    <dubbo:reference id="sellerService" interface="com.pinyougou.sellergoods.service.SellerService"></dubbo:reference>
+
+
+    <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></beans:bean>
 </beans:beans>
